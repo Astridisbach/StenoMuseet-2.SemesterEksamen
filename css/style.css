@@ -1,0 +1,47 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #f2e9d6;
+    font-family: 'Rubik Bubbles', cursive;
+    color: #921537;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    padding: 4rem
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .ikoner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .ikon-row {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  
+  .ikon-row img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .lm {
+    font-size: 3rem;
+  }
+  
