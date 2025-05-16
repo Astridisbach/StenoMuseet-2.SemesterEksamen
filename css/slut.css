@@ -20,30 +20,31 @@ body {
     margin-bottom: 2rem;
   }
   
- 
   .ikoner {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    padding: 0 2rem;
   }
   
   .ikoner img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
+    display: block;
   }
-  
   
   .personer {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 1rem;
+    flex-direction: row;
+    margin-top: -6rem;
   }
   
   .personer img {
-    width: 100px;
+    width: 140px;
     height: auto;
+    display: block;
   }
-  
