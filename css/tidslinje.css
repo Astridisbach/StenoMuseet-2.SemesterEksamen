@@ -1,2 +1,138 @@
-
+body {
+    margin: 0;
+    background-color: #f2e9d6;
+    font-family: 'Rubik Bubbles', cursive;
+    color: #741936;
+  }
   
+  .timeline-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #741936;
+    padding: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .timeline-row:last-child {
+    border-bottom: 2px solid #741936;
+  }
+  
+  .timeline-row .text {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  #krokodille {
+    position: absolute;
+    top: 14px;
+    left: 790px;
+    transform: rotate(7.5deg);
+    width: 500px;
+  }
+  
+  #blomst {
+    position: absolute;
+    top: 255px;
+    left: 660px;
+    width: 16%;
+  }
+
+  #urter {
+    position: absolute;
+    top: 270px;
+    left: 830px;
+    width: 10%;
+  }
+
+  #stofpose {
+    position: absolute;
+    top: 330px;
+    left: 980px;
+    width: 14%;
+  }
+
+  #kondom {
+    position: absolute;
+    top: 490px;
+    left: 780px;
+    width: 12%;
+  }
+
+  #skyl {
+    position: absolute;
+    top: 490px;
+    left: 1100px;
+    width: 12%;
+  }
+
+  #spiral {
+    position: absolute;
+    top: 710px;
+    left: 660px;
+    width: 5%;
+    transform: rotate(-25deg);
+  }
+
+  #pessar {
+    position: absolute;
+    top: 600px;
+    left: 950px;
+    width: 10%;
+  }
+
+  #pille1 {
+    position: absolute;
+    top: 880px;
+    left: 630px;
+    width: 3%;
+    transform: rotate(85deg);
+  }
+
+  #ppille {
+    position: absolute;
+    top: 720px;
+    left: 730px;
+    width: 11%;
+  }
+
+  #pille2 {
+    position: absolute;
+    top: 820px;
+    left: 1030px;
+    width: 3%;
+  }
+
+  #pille3 {
+    position: absolute;
+    top: 980px;
+    left: 800px;
+    width: 3%;
+  }
+
+  #telefon {
+    position: absolute;
+    top: 870px;
+    left: 880px;
+    width: 14%;
+  }
+
+  #globus {
+    position: absolute;
+    top: 800px;
+    left: 1070px;
+    width: 18%;
+  }
+
