@@ -42,6 +42,13 @@ body {
   }
   
   .lm {
-    font-size: 3rem;
+      font-size: 3rem;
+      color: #921537;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+  a {
+    text-decoration: none;
   }
   
