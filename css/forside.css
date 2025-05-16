@@ -1,0 +1,59 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+
+  .quiz-container {
+    background-image: url('../img/baggrund.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .quiz-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quiz-options img {
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .quiz-options img:hover {
+    transform: scale(1.05);
+  }
+  
+ 
+  .afslut-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .afslut-container img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .afslut-container img:hover {
+    transform: scale(1.05);
+  }
+  
