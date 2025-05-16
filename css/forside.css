@@ -26,13 +26,19 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
   }
   
   .quiz-options img {
-    width: 400px;
+    width: 300px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
+    
+  }
+
+  .quiz-options a:first-child img {
+    width: 340px;
   }
   
   .quiz-options img:hover {
