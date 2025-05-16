@@ -9,7 +9,6 @@ body {
     align-items: center;
   }
   
-  
   .container {
     display: flex;
     flex-direction: column;
@@ -26,18 +25,19 @@ body {
   .ikoner {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-  }
+    gap: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
   
   .ikon-row {
     display: flex;
-    gap: 3rem;
+    gap: 9rem;
     justify-content: center;
   }
   
   .ikon-row img {
-    width: 80px;
-    height: 80px;
+    width: 140px;
     object-fit: contain;
   }
   
