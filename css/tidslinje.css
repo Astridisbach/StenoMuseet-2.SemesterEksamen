@@ -55,6 +55,7 @@ body {
     left: 790px;
     transform: rotate(7.5deg);
     width: 500px;
+    
   }
   
   #blomst {
@@ -152,53 +153,61 @@ body {
 
 
 
-  .popup {
+  .image-popup {
     display: none;
     position: fixed;
     z-index: 1000;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    padding-top: 60px;
   }
   
-  .popup-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 2rem;
-    border: 2px solid #741936;
-    width: 60%;
-    border-radius: 15px;
-    color: #741936;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    line-height: 2.5rem;
+  .image-popup img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    background-color: transparent;;
   }
   
-  .popup-content h2 {
-    margin-top: 0;
-  }
-  
-  .close {
-    color: #741936;
+  .image-popup .close {
     position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 2rem;
+    top: 20px;
+    right: 40px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .popup-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
+  
+  .nav-btn {
+    width: 60px;
     cursor: pointer;
   }
   
 
-  .popup-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+
+  .luk-side {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #741936;
+    font-weight: bold;
+    z-index: 1001;
+    cursor: pointer;
+    transition: color 0.2s ease;
   }
   
-  .nav-btn {
-    width: 80px;
-    cursor: pointer;
+  .luk-side:hover {
+    color: #a82c54;
   }
+  
