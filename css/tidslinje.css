@@ -179,13 +179,14 @@ p {
   padding-top: 60px;
 }
 
-.image-popup img {
-  max-width: 100%;
-  max-height: 90%;
-  border-radius: 10px;
-  background-color: transparent;
-  transform: scale(1.25); /* Let zoom-effekt */
-}
+#popup-img {
+    max-width: 100%;
+    max-height: 90%;
+    border-radius: 10px;
+    background-color: transparent;
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
+  }
 
 .image-popup .close {
   position: absolute;
@@ -247,3 +248,11 @@ p {
 .hover-img:hover {
   transform: scale(1.1);
 }
+
+.popup-nav {
+    position: absolute;
+    width: 44%;
+    top: 640px;
+    left: 370px;
+    transform: scale(1.5);
+  }
