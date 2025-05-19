@@ -1,244 +1,249 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('fonts/dingos.ttf') format('truetype');
-  }
-  
+  font-family: 'MyFont'; /* Gør en lokal font tilgængelig under navnet 'MyFont' */
+  src: url('fonts/dingos.ttf') format('truetype');
+}
 
+/* Basal styling af body */
 body {
-    margin: 0;
-    background-color: #f2e9d6;
-    color: #741936;
-  }
-  
-  .timeline-container {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    font-family: 'Rubik Bubbles', cursive;
-  }
-  
-  h2 {
-    font-family: 'dingos', sans-serif;
-  }
+  margin: 0;
+  background-color: #f2e9d6; /* Lys beige baggrund */
+  color: #741936;            /* Vinrød tekstfarve */
+}
 
-  p {
-    font-family: 'Open Sans', cursive;
-  }
+/* Container til hele tidslinjen */
+.timeline-container {
+  padding: 2rem;
+  max-width: 1200px;  /* Begræns bredde */
+  margin: auto;       /* Centrer containeren */
+}
 
-  .timeline-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid #741936;
-    padding: 1.5rem 0;
-    flex-wrap: wrap;
-  }
-  
-  .timeline-row:last-child {
-    border-bottom: 2px solid #741936;
-  }
-  
-  .timeline-row .text {
-    flex: 1;
-    min-width: 250px;
-  }
+/* Hovedoverskrift */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-family: 'Rubik Bubbles', cursive; /* Sjov, dekorativ skrifttype */
+}
 
-  #krokodille {
-    position: absolute;
-    top: 14px;
-    left: 790px;
-    transform: rotate(7.5deg);
-    width: 500px;
-  }
-  #krokodille:hover {
-    transform: rotate(7.5deg) scale(1.1);
-  }
-  
-  #blomst {
-    position: absolute;
-    top: 255px;
-    left: 660px;
-    width: 16%;
-  }
+/* Underoverskrifter */
+h2 {
+  font-family: 'dingos', sans-serif; /* Brug font importeret via @font-face */
+}
 
-  #urter {
-    position: absolute;
-    top: 270px;
-    left: 830px;
-    width: 10%;
-  }
+/* Paragraffer */
+p {
+  font-family: 'Open Sans', cursive;
+}
 
-  #stofpose {
-    position: absolute;
-    top: 330px;
-    left: 980px;
-    width: 14%;
-  }
+/* En række i tidslinjen */
+.timeline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #741936;
+  padding: 1.5rem 0;
+  flex-wrap: wrap; /* Tillader elementer at gå på ny linje ved små skærme */
+}
 
-  #kondom {
-    position: absolute;
-    top: 490px;
-    left: 780px;
-    width: 12%;
-  }
+/* Sæt bundlinje på sidste række */
+.timeline-row:last-child {
+  border-bottom: 2px solid #741936;
+}
 
-  #skyl {
-    position: absolute;
-    top: 490px;
-    left: 1100px;
-    width: 12%;
-  }
+/* Teksten i en række */
+.timeline-row .text {
+  flex: 1;
+  min-width: 250px; /* Sørger for at teksten ikke bliver for smal */
+}
 
-  #spiral {
-    position: absolute;
-    top: 710px;
-    left: 660px;
-    width: 5%;
-    transform: rotate(-25deg);
-  }
-  #spiral:hover {
-    transform: rotate(-25deg) scale(1.1);
-  }
+/* Positionering af billeder/ikoner på tidslinjen */
+#krokodille {
+  position: absolute;
+  top: 14px;
+  left: 790px;
+  transform: rotate(7.5deg);
+  width: 500px;
+}
+#krokodille:hover {
+  transform: rotate(7.5deg) scale(1.1); /* Zoom-effekt ved hover */
+}
 
-  #pessar {
-    position: absolute;
-    top: 600px;
-    left: 950px;
-    width: 10%;
-  }
+#blomst {
+  position: absolute;
+  top: 255px;
+  left: 660px;
+  width: 16%;
+}
 
-  #pille1 {
-    position: absolute;
-    top: 880px;
-    left: 630px;
-    width: 3%;
-    transform: rotate(85deg);
-  }
-  #pille1:hover {
-    transform: rotate(85deg) scale(1.1);
-  }
+#urter {
+  position: absolute;
+  top: 270px;
+  left: 830px;
+  width: 10%;
+}
 
-  #ppille {
-    position: absolute;
-    top: 720px;
-    left: 730px;
-    width: 11%;
-  }
+#stofpose {
+  position: absolute;
+  top: 330px;
+  left: 980px;
+  width: 14%;
+}
 
-  #pille2 {
-    position: absolute;
-    top: 820px;
-    left: 1030px;
-    width: 3%;
-  }
+#kondom {
+  position: absolute;
+  top: 490px;
+  left: 780px;
+  width: 12%;
+}
 
-  #pille3 {
-    position: absolute;
-    top: 980px;
-    left: 800px;
-    width: 3%;
-  }
+#skyl {
+  position: absolute;
+  top: 490px;
+  left: 1100px;
+  width: 12%;
+}
 
-  #telefon {
-    position: absolute;
-    top: 870px;
-    left: 880px;
-    width: 14%;
-  }
+#spiral {
+  position: absolute;
+  top: 710px;
+  left: 660px;
+  width: 5%;
+  transform: rotate(-25deg);
+}
+#spiral:hover {
+  transform: rotate(-25deg) scale(1.1);
+}
 
-  #globus {
-    position: absolute;
-    top: 800px;
-    left: 1070px;
-    width: 18%;
-  }
+#pessar {
+  position: absolute;
+  top: 600px;
+  left: 950px;
+  width: 10%;
+}
 
+#pille1 {
+  position: absolute;
+  top: 880px;
+  left: 630px;
+  width: 3%;
+  transform: rotate(85deg);
+}
+#pille1:hover {
+  transform: rotate(85deg) scale(1.1);
+}
 
+#ppille {
+  position: absolute;
+  top: 720px;
+  left: 730px;
+  width: 11%;
+}
 
-  .image-popup {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    text-align: center;
-    padding-top: 60px;
-  }
-  
-  .image-popup img {
-    max-width: 100%;
-    max-height: 90%;
-    border-radius: 10px;
-    background-color: transparent;
-    transform: scale(1.25);
-    
-  }
-  
-  .image-popup .close {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    font-size: 2.5rem;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .popup-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    padding: 0 2rem;
-  }
-  
-  .nav-btn {
-    width: 60px;
-    cursor: pointer;
-  }
-  
+#pille2 {
+  position: absolute;
+  top: 820px;
+  left: 1030px;
+  width: 3%;
+}
 
+#pille3 {
+  position: absolute;
+  top: 980px;
+  left: 800px;
+  width: 3%;
+}
 
-  .close-img {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    width: 40px; 
-    cursor: pointer;
-    z-index: 1001;
-    transition: transform 0.2s ease;
-  }
-  
-  .close-img:hover {
-    transform: scale(1.1);
-  }
-  
-  
-  .page-close {
-    position: fixed;
-    top: 20px;
-    right: 1300px;
-    z-index: 1001;
-  }
-  
-  .hidden {
-    display: none;
-  }
+#telefon {
+  position: absolute;
+  top: 870px;
+  left: 880px;
+  width: 14%;
+}
 
+#globus {
+  position: absolute;
+  top: 800px;
+  left: 1070px;
+  width: 18%;
+}
 
+/* Pop-up billede (overlay) */
+.image-popup {
+  display: none; /* Skjules som standard */
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8); /* Halvgennemsigtig sort baggrund */
+  text-align: center;
+  padding-top: 60px;
+}
 
+.image-popup img {
+  max-width: 100%;
+  max-height: 90%;
+  border-radius: 10px;
+  background-color: transparent;
+  transform: scale(1.25); /* Let zoom-effekt */
+}
 
-  .hover-img {
-    transition: transform 0.3s ease;
-    display: inline-block;
-  }
-  
-  .hover-img:hover {
-    transform: scale(1.1);
-  }
-  
+.image-popup .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation i pop-up */
+.popup-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+/* Pile til navigation */
+.nav-btn {
+  width: 60px;
+  cursor: pointer;
+}
+
+/* Luk-knap som billede */
+.close-img {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 40px; 
+  cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.2s ease;
+}
+
+.close-img:hover {
+  transform: scale(1.1);
+}
+
+/* Luk hele siden-knap (placering kan justeres for responsivitet) */
+.page-close {
+  position: fixed;
+  top: 20px;
+  right: 1300px;
+  z-index: 1001;
+}
+
+/* Skjuler elementer med class="hidden" */
+.hidden {
+  display: none;
+}
+
+/* Effekt for billeder, der skal forstørres ved hover */
+.hover-img {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.hover-img:hover {
+  transform: scale(1.1);
+}

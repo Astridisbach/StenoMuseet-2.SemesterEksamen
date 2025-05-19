@@ -1,39 +1,43 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> <!-- Angiver at indholdet er på dansk -->
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" /> <!-- Understøtter danske specialtegn -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prævention gennem historien</title>
+  <title>Prævention gennem historien</title> <!-- Titel vist i browserfanen -->
 
+  <!-- Import af Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Ekstra font: Open Sans -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Bubbles&display=swap" rel="stylesheet">
 
+  <!-- Link til den eksterne stylesheet -->
   <link rel="stylesheet" href="css/tidslinje.css" />
 </head>
+
 <body>
-  
+
+  <!-- Luk-knap øverst, der fører tilbage til forsiden -->
   <a href="forside.html" class="page-close" id="timeline-close">
     <img src="img/knapper/exit.png" alt="Luk" class="close-img">
   </a>
-
-
+  
+  <!-- Hovedindhold: Tidslinjen -->
   <main class="timeline-container">
     <h1>PRÆVENTION GENNEM HISTORIEN</h1>
 
+    <!-- Tidslinjeafsnit: 5000 - 1000 f.v.t. -->
     <div class="timeline-row">
       <div class="text">
         <h2>5000 - 1000 f.v.t.</h2>
         <p>De første forsøg på at undgå graviditet</p>
         <img src="img/tidslinje/tidslinje1.png" id="krokodille" class="hover-img" alt="krokodille">
       </div>
-      
     </div>
 
+    <!-- 100 e.v.t. – 1500 -->
     <div class="timeline-row">
       <div class="text">
         <h2>100 e.v.t. – 1500</h2>
@@ -41,9 +45,9 @@
         <img src="img/tidslinje/blomst.png" id="blomst" class="hover-img" alt="blomst">
         <img src="img/tidslinje/urter.png" id="urter" class="hover-img" alt="urter">
       </div>
-      
     </div>
 
+    <!-- 1500 – 1900 -->
     <div class="timeline-row">
       <div class="text">
         <h2>1500 – 1900</h2>
@@ -51,10 +55,10 @@
         <img src="img/tidslinje/stofpose.png" id="stofpose" class="hover-img" alt="stofpose">
         <img src="img/tidslinje/kondom.png" id="kondom" class="hover-img" alt="kondom">
         <img src="img/tidslinje/skyl.png" id="skyl" class="hover-img" alt="skyl">
-      </div>
-      
+      </div> 
     </div>
 
+    <!-- 1900 – 1960 -->
     <div class="timeline-row">
       <div class="text">
         <h2>1900 – 1960</h2>
@@ -62,9 +66,9 @@
         <img src="img/tidslinje/spiral.png" id="spiral" class="hover-img" alt="spiral">
         <img src="img/tidslinje/pessar.png" id="pessar" class="hover-img" alt="pessar">
       </div>
-      
     </div>
 
+    <!-- 1960 – 2000 -->
     <div class="timeline-row">
       <div class="text">
         <h2>1960 – 2000</h2>
@@ -73,9 +77,9 @@
         <img src="img/tidslinje/p-pille.png" id="ppille" class="hover-img" alt="ppille">
         <img src="img/tidslinje/pille.png" id="pille2" class="hover-img" alt="pille">
       </div>
-    
     </div>
 
+    <!-- 2000 – i dag -->
     <div class="timeline-row">
       <div class="text">
         <h2>2000 – i dag</h2>
@@ -86,12 +90,12 @@
       </div>
     </div>
 
-
-
-
+    <!-- Popup til billedevisning (åbnes ved klik på billede) -->
     <div id="image-popup" class="image-popup">
       <img src="img/knapper/exit.png" class="close-img" id="image-close" alt="Luk">
       <img src="" id="popup-img" alt="Stort billede" />
+      
+      <!-- Navigation i popup: tilbage/frem -->
       <div class="popup-nav">
         <img src="img/knapper/tilbage.png" class="nav-btn back-btn" alt="Tilbage">
         <img src="img/knapper/frem.png" class="nav-btn next-btn" alt="Frem">
@@ -100,9 +104,7 @@
 
   </main>
 
-
-  
+  <!-- JavaScript til popup-funktionalitet -->
   <script src="js/popup.js"></script>
 </body>
 </html>
-
