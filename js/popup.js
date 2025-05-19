@@ -1,5 +1,6 @@
 "use strict"; // Aktiverer JS-strikt mode, hvilket hjælper med at finde fejl
 
+
 const images = [
   'img/tidslinje/popup1.png',
   'img/tidslinje/popup2.png',
