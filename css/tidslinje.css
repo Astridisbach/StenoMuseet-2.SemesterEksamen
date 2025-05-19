@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/dingos.ttf') format('truetype');
+  }
+  
+
 body {
     margin: 0;
     background-color: #f2e9d6;
-    font-family: 'Rubik Bubbles', cursive;
     color: #741936;
   }
   
@@ -15,8 +20,17 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
+    font-family: 'Rubik Bubbles', cursive;
   }
   
+  h2 {
+    font-family: 'dingos', sans-serif;
+  }
+
+  p {
+    font-family: 'Open Sans', cursive;
+  }
+
   .timeline-row {
     display: flex;
     justify-content: space-between;
