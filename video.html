@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> <!-- Angiver at sproget på siden er dansk -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video m. fakta om brugen af præventionsmidler</title>
+  <meta charset="UTF-8"> <!-- Understøtter danske tegn -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Sørger for, at layoutet er mobilvenligt -->
+  
+  <title>Video m. fakta om brugen af præventionsmidler</title> <!-- Titel vises i browserfanen -->
 
+  <!-- Forbindelser til Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Import af skrifttyper: Open Sans og Rubik Bubbles -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Bubbles&display=swap" rel="stylesheet">
 
-
+  <!-- Link til den eksterne CSS-fil -->
   <link rel="stylesheet" href="css/video.css">
 </head>
+
 <body>
-    
+  
+  <!-- Video-element, der fylder hele bredden -->
   <video id="myVideo" width="100%">
     <source src="img/video/motionGraphic.mp4" type="video/mp4">
+    <!-- Fallback tekst hvis video ikke kan afspilles -->
+    Din browser understøtter ikke videoafspilning.
   </video>
   
+  <!-- Knappen der starter videoen -->
   <button class="play-button" onclick="startVideo()">Start video</button>
 
+  <!-- Link til JavaScript-fil, der håndterer videoafspilning -->
   <script src="js/video.js"></script>
 </body>
 </html>
