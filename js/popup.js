@@ -1,5 +1,6 @@
-"use strict"; // Aktiverer JS-strikt mode, hvilket hjælper med at finde fejl
+"use strict"; // Aktiverer strict mode – hjælper med at fange fejl og forbyder brug af visse usikre funktioner
 
+// Array med stier til billeder, som skal vises i popup'en
 const images = [
   'img/tidslinje/popup1.png',
   'img/tidslinje/popup2.png',
@@ -9,52 +10,53 @@ const images = [
   'img/tidslinje/popup6.png'
 ];
 
-let currentIndex = null;
+let currentIndex = null; // Holder styr på hvilket billede der vises i øjeblikket
 
-const popup = document.getElementById('image-popup');
-const popupImg = document.getElementById('popup-img');
-const timelineClose = document.getElementById('timeline-close');
+// Referencer til DOM-elementer
+const popup = document.getElementById('image-popup');        // Selve popup-containeren
+const popupImg = document.getElementById('popup-img');       // Billedet i popup'en
+const timelineClose = document.getElementById('timeline-close'); // Den øverste luk-knap
 
-// Klik på tidslinjerækker åbner popup og skjuler luk-knap
+// Når man klikker på en række i tidslinjen...
 document.querySelectorAll('.timeline-row').forEach((row, index) => {
   row.addEventListener('click', () => {
-    currentIndex = index;
-    popupImg.src = images[currentIndex];
-    popup.style.display = 'block';
-    timelineClose.classList.add('hidden'); // Skjul øverste luk-knap
+    currentIndex = index;                           // Sæt index til den række der blev klikket på
+    popupImg.src = images[currentIndex];            // Skift billedet i popup'en
+    popup.style.display = 'block';                  // Vis popup'en
+    timelineClose.classList.add('hidden');          // Skjul øverste luk-knap, så kun krydset i popup'en bruges
   });
 });
 
-// Luk popup (klik på kryds)
+// Når man klikker på krydset i popup'en
 document.getElementById('image-close').addEventListener('click', () => {
-  popup.style.display = 'none';
-  timelineClose.classList.remove('hidden'); // Vis luk-knap igen
+  popup.style.display = 'none';                     // Skjul popup'en
+  timelineClose.classList.remove('hidden');         // Vis den øverste luk-knap igen
 });
 
-// Frem-knap
+// Når man klikker på frem-knappen
 document.querySelector('.next-btn').addEventListener('click', () => {
   if (currentIndex < images.length - 1) {
-    currentIndex++;
-    popupImg.src = images[currentIndex];
+    currentIndex++;                                 // Gå til næste billede
+    popupImg.src = images[currentIndex];            // Opdater billedet i popup'en
   } else {
-    window.location.href = 'forside.html';
+    window.location.href = 'forside.html';          // Hvis der ikke er flere billeder, gå til forside
   }
 });
 
-// Tilbage-knap
+// Når man klikker på tilbage-knappen
 document.querySelector('.back-btn').addEventListener('click', () => {
   if (currentIndex > 0) {
-    currentIndex--;
-    popupImg.src = images[currentIndex];
+    currentIndex--;                                 // Gå til forrige billede
+    popupImg.src = images[currentIndex];            // Opdater billedet i popup'en
   } else {
-    window.location.href = 'forside.html';
+    window.location.href = 'forside.html';          // Hvis man er ved første billede, gå til forside
   }
 });
 
-// Luk popup ved klik udenfor billede
+// Hvis man klikker uden for selve billedet (på baggrunden), lukkes popup'en
 window.addEventListener('click', (e) => {
   if (e.target === popup) {
-    popup.style.display = 'none';
-    timelineClose.classList.remove('hidden');
+    popup.style.display = 'none';                   // Skjul popup'en
+    timelineClose.classList.remove('hidden');       // Vis den øverste luk-knap igen
   }
 });

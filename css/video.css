@@ -1,44 +1,49 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  /* Fuldskærms video */
-  video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Sørger for at videoen ligger bag andet indhold */
-  }
+  margin: 0;             /* Fjern standardmargen fra browseren */
+  padding: 0;            /* Fjern standardpolstring */
+  height: 100%;          /* Sørg for at html og body fylder hele højden */
+  overflow: hidden;      /* Skjul scrollbars – forhindrer at man kan scrolle siden */
+}
 
-  /* Centreret knap */
-  .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1em 2em;
-    font-family: 'Open Sans';
-    font-size: 1.2em;
-    background-color: #FFFCE6;
-    color: #B06F75;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px #B06F75;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+/* Fuldskærms video */
+video {
+  position: fixed;       /* Fastgør videoen til skærmen, selv ved scroll (selvom scrolling er slået fra) */
+  top: 0;
+  left: 0;
+  width: 100%;           /* Fyld hele bredden */
+  height: 100%;          /* Fyld hele højden */
+  object-fit: cover;     /* Tilpas videoen så den fylder hele rammen, uden at forvrænge den */
+  z-index: -1;           /* Læg videoen bag alt andet indhold */
+}
 
-  .play-button:hover {
-    background-color: #FFFCE6;
-    transform: translate(-50%, -50%) scale(1.05);
-  }
+/* Centreret knap midt på skærmen */
+.play-button {
+  position: absolute;                        /* Absolut positionering for placering midt på skærmen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);          /* Justér positionen, så den er perfekt centreret */
+  padding: 1em 2em;                          /* Giver knappen luft omkring teksten */
+  font-family: 'Open Sans';                 /* Skrifttype */
+  font-size: 1.2em;                          /* Større tekst */
+  background-color: #FFFCE6;                 /* Lys baggrund */
+  color: #B06F75;                            /* Rosa tekstfarve */
+  border: none;                              /* Ingen kant */
+  border-radius: 12px;                       /* Bløde hjørner */
+  cursor: pointer;                           /* Gør knappen klikbar */
+  box-shadow: 0 4px 15px #B06F75;            /* Skygge under knappen i matchende farve */
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+                                            /* Glidende animation ved hover og klik */
+}
 
-  .play-button:active {
-    transform: translate(-50%, -50%) scale(0.98);
-  }
+/* Når musen holdes over knappen */
+.play-button:hover {
+  background-color: #FFFCE6;                 /* Samme farve, men kan ændres hvis ønsket */
+  transform: translate(-50%, -50%) scale(1.05); 
+                                            /* Lidt større ved hover */
+}
+
+/* Når knappen klikkes */
+.play-button:active {
+  transform: translate(-50%, -50%) scale(0.98); 
+                                            /* Lidt mindre ved klik for tryk-effekt */
+}
