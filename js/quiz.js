@@ -24,19 +24,46 @@ function answer(userChoice) {
 
 function updateContent() {
   const quizImage = document.getElementById('quiz-image');
-  const btns = document.querySelectorAll('.btn-img');
+  const svarKnapper = document.querySelectorAll('.btn-img');
+  const fremKnap = document.querySelector('.frem-btn');
 
-  // Skift billede
   if (currentIndex < questions.length) {
     quizImage.src = questions[currentIndex].image;
 
-    // Vis knapper kun på spørgsmål (lige index)
     const isQuestion = currentIndex % 2 === 0;
-    btns.forEach(btn => {
+
+    // Vis eller skjul sandt/falsk knapper
+    svarKnapper.forEach(btn => {
       btn.style.display = isQuestion ? 'block' : 'none';
     });
+
+    // Vis frem-knappen kun på svar
+    if (!isQuestion) {
+      fremKnap.classList.add('vis');
+    } else {
+      fremKnap.classList.remove('vis');
+    }
+  }
+}
+
+
+
+
+
+function goBack() {
+  if (currentIndex === 0) {
+    window.location.href = "forside.html"; // Første billede: gå til forside
   } else {
-    alert('Quiz færdig!');
-    document.querySelector('.popup').style.display = 'none';
+    currentIndex--;
+    updateContent();
+  }
+}
+
+function goForward() {
+  if (currentIndex >= questions.length - 1) {
+    window.location.href = "slut.html"; // Sidste billede: gå til slutside
+  } else {
+    currentIndex++;
+    updateContent();
   }
 }

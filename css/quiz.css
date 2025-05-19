@@ -27,7 +27,7 @@ body {
   
   .btn-img {
     position: absolute;
-    width: 200px; /* Juster efter din knapgrafik */
+    width: 200px; 
     cursor: pointer;
   }
   
@@ -40,4 +40,33 @@ body {
     bottom: 140px;
     right: 15%;
   }
+  
+
+
+  .nav-wrapper {
+    display: absolute;
+  }
+
+
+  
+  .nav-btn {
+    width: 120px;
+    height: auto;
+
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .frem-btn {
+    visibility: hidden; 
+    opacity: 0;
+  }
+  
+  
+  .frem-btn.vis {
+    visibility: visible;
+    opacity: 1;
+  }
+  
   
