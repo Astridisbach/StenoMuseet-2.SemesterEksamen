@@ -55,7 +55,9 @@ body {
     left: 790px;
     transform: rotate(7.5deg);
     width: 500px;
-    
+  }
+  #krokodille:hover {
+    transform: rotate(7.5deg) scale(1.1);
   }
   
   #blomst {
@@ -100,6 +102,9 @@ body {
     width: 5%;
     transform: rotate(-25deg);
   }
+  #spiral:hover {
+    transform: rotate(-25deg) scale(1.1);
+  }
 
   #pessar {
     position: absolute;
@@ -114,6 +119,9 @@ body {
     left: 630px;
     width: 3%;
     transform: rotate(85deg);
+  }
+  #pille1:hover {
+    transform: rotate(85deg) scale(1.1);
   }
 
   #ppille {
@@ -221,3 +229,16 @@ body {
   .hidden {
     display: none;
   }
+
+
+
+
+  .hover-img {
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .hover-img:hover {
+    transform: scale(1.1);
+  }
+  
