@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> <!-- Angiver at siden er på dansk -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forside</title>
+  <meta charset="UTF-8" /> <!-- Tegnsætning: understøtter danske specialtegn -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <!-- Gør siden responsiv på mobil og tablets -->
 
+  <title>Forside</title> <!-- Sidens titel vises i browsertab -->
+
+  <!-- Forbindelser til Google Fonts (hurtigere indlæsning) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Import af skrifttypen "Rubik Bubbles" -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet" />
 
+  <!-- Link til din eksterne CSS-fil -->
   <link rel="stylesheet" href="css/forside.css" />
 </head>
+
 <body>
+  <!-- Hovedindholdet på forsiden -->
   <main class="quiz-container">
+    
+    <!-- De tre valgmuligheder på forsiden (tidslinje, quiz, video) -->
     <div class="quiz-options">
       <a href="tidslinje.html">
-        <img src="img/knapper/tidslinjeknap.png" alt="tid">
+        <img src="img/knapper/tidslinjeknap.png" alt="Tid">
       </a>
       <a href="quiz.html">
         <img src="img/knapper/quizknap.png" alt="Quiz">
@@ -25,11 +35,13 @@
       </a>
     </div>
 
+    <!-- Fast placeret afslutningsknap nederst til højre -->
     <div class="afslut-container">
       <a href="slut.html">
         <img src="img/knapper/afslut.png" alt="Afslut">
       </a>
     </div>
+
   </main>
 </body>
 </html>
