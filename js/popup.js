@@ -1,6 +1,7 @@
 "use strict"; // Aktiverer strict mode – hjælper med at fange fejl og forbyder brug af visse usikre funktioner
 
 // Array med stier til billeder, som skal vises i popup'en
+>>>>>>> 00072be0be5bd89a8e5a0ce68fe627c88684f4f7
 const images = [
   'img/tidslinje/popup1.png',
   'img/tidslinje/popup2.png',
