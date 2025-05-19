@@ -1,48 +1,48 @@
 body {
-    margin: 0;
-    background-color: #f2e9d6;
-    font-family: 'Rubik Bubbles', cursive;
-    color: #921537;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* centrér toppen, ikke midten */
-    min-height: 100vh;       /* fyld hele skærmhøjde */
-  }
-  
-  .container {
-    text-align: center;
-    margin-top: 10rem;
-    gap: 2rem;
-  }
- 
-  .tak {
-    font-size: 5rem;
-    margin-bottom: 4rem;
-  }
-  
-  .ikoner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-  }
-  
-  .ikoner img {
-    width: 150px;
-    object-fit: contain;
-    display: block;
+  margin: 0; /* Fjern browserens standardmargen */
+  background-color: #f2e9d6; /* Lys beige baggrund */
+  font-family: 'Rubik Bubbles', cursive; /* Legesyg, dekorativ skrifttype */
+  color: #921537; /* Mørk vinrød tekstfarve */
+  display: flex; /* Brug flexbox til at placere indhold */
+  justify-content: center; /* Centrer indholdet horisontalt */
+  align-items: flex-start; /* Placer indhold i toppen (ikke midt) */
+  min-height: 100vh; /* Sørg for at body fylder hele skærmen */
 }
-  
-  .personer {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 10rem; /* ← her rykker du dem nedad */
-    gap: 4rem;
-  }
-  
-  .personer img {
-    width: 210px;
-    height: auto;
-    display: block;
-  }
+
+.container {
+  text-align: center; /* Centrer tekst inde i containeren */
+  margin-top: 10rem; /* Ryk containeren lidt ned fra toppen */
+  gap: 2rem; /* Afstand mellem elementer – har dog kun effekt i en flex- eller grid-container */
+}
+
+.tak {
+  font-size: 5rem; /* Stor overskrift til "Tak"-budskab */
+  margin-bottom: 4rem; /* Luft under overskriften */
+}
+
+.ikoner {
+  display: flex; /* Vandret layout af ikoner */
+  justify-content: space-between; /* Fordel pladsen jævnt mellem ikonerne */
+  align-items: center; /* Centrer dem lodret hvis de har forskellig højde */
+  padding: 0 2rem; /* Indvendig margen i siderne */
+}
+
+.ikoner img {
+  width: 150px; /* Fast bredde på ikoner */
+  object-fit: contain; /* Bevar proportioner og undgå forvrængning */
+  display: block; /* Fjern evt. mellemrum under billedet (gør det til blok-element) */
+}
+
+.personer {
+  display: flex; /* Række af billeder/personer */
+  justify-content: center; /* Centrer rækken horisontalt */
+  flex-direction: row; /* Sørg for at de står på en linje */
+  margin-top: 10rem; /* Giver luft ned til sektionen */
+  gap: 4rem; /* Luft mellem billederne */
+}
+
+.personer img {
+  width: 210px; /* Ens størrelse */
+  height: auto; /* Bevar korrekt højde ud fra bredde */
+  display: block; /* Undgå mellemrum under billeder */
+}

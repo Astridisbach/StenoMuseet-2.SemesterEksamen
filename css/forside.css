@@ -1,65 +1,66 @@
-
 html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-  }
-  
+  margin: 0;              /* Fjern standardmargen */
+  padding: 0;             /* Fjern standardpolstring */
+  overflow: hidden;       /* Skjul scrollbars – forhindrer scroll */
+  height: 100%;           /* Sørg for at body og html fylder hele højden */
+}
 
-  .quiz-container {
-    background-image: url('../img/baggrund.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .quiz-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-  }
-  
-  .quiz-options img {
-    width: 300px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    
-  }
+/* Hovedcontainer for quizzen med baggrundsbillede */
+.quiz-container {
+  background-image: url('../img/baggrund.png'); /* Baggrundsbillede */
+  background-size: cover;       /* Fylder hele skærmen, uden at forvrænge */
+  background-position: center;  /* Centrer billedet */
+  background-repeat: no-repeat; /* Undgå gentagelse */
+  width: 100vw;                 /* Fyld hele bredden af viewport */
+  height: 100vh;                /* Fyld hele højden af viewport */
+  position: relative;           /* Muliggør placering af indhold inde i container */
+  display: flex;                /* Brug flexbox for layout */
+  flex-direction: column;      /* Læg indholdet i kolonner (vertikalt) */
+  align-items: center;         /* Centrer horisontalt */
+  justify-content: center;     /* Centrer vertikalt */
+}
 
-  .quiz-options a:first-child img {
-    width: 340px;
-  }
-  
-  .quiz-options img:hover {
-    transform: scale(1.05);
-  }
-  
- 
-  .afslut-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;    
-  }
-  
-  .afslut-container img {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .afslut-container img:hover {
-    transform: scale(1.05);
-  }
-  
+/* Beholder for quiz-valg (f.eks. svarmuligheder) */
+.quiz-options {
+  display: flex;               /* Læg valgmuligheder vandret ved siden af hinanden */
+  justify-content: center;     /* Centrer dem vandret */
+  align-items: center;         /* Centrer dem lodret */
+  gap: 4rem;                   /* Mellemrum mellem valgmuligheder */
+}
+
+/* Generel styling for billeder i quiz-options */
+.quiz-options img {
+  width: 300px;               /* Bredde på valgbilleder */
+  height: auto;               /* Bevar proportionerne */
+  cursor: pointer;            /* Gør det tydeligt at billedet kan klikkes */
+  transition: transform 0.2s ease; /* Glidende zoom-effekt ved hover */
+}
+
+/* Gør det første quiz-billede større */
+.quiz-options a:first-child img {
+  width: 340px;
+}
+
+/* Hover-effekt: zoom lidt ind når musen holdes over billedet */
+.quiz-options img:hover {
+  transform: scale(1.05);
+}
+
+/* Beholder for afslut-knappen nederst til højre */
+.afslut-container {
+  position: fixed;     /* Fast position – bliver på skærmen ved scroll */
+  bottom: 20px;        /* Afstand fra bunden */
+  right: 20px;         /* Afstand fra højre */
+}
+
+/* Styling af afslut-knappens billede */
+.afslut-container img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Blød zoom-effekt */
+}
+
+.afslut-container img:hover {
+  transform: scale(1.05); /* Zoom ind ved hover */
+}

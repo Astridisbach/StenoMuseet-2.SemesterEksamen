@@ -1,54 +1,53 @@
 body {
-    height: 100%;
-    margin: 0;
-    background-color: #f2e9d6;
-    font-family: 'Rubik Bubbles', cursive;
-    color: #921537;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;
-    padding: 4rem
-  }
-  
-  h1 {
-    font-size: 4rem;
-  }
-  
-  .ikoner {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  height: 100%; /* Gør body-elementet i fuld højde af vinduet */
+  margin: 0;    /* Fjern standardmargen fra browseren */
+  background-color: #f2e9d6; /* Lys beige baggrundsfarve */
+  font-family: 'Rubik Bubbles', cursive; /* Sjov, legende skrifttype */
+  color: #921537; /* Mørk rødlig tekstfarve */
+  display: flex; /* Brug flexbox til at centrere indholdet */
+  justify-content: center; /* Centrer vandret */
+  align-items: center; /* Centrer lodret */
 }
-  
-  .ikon-row {
-    display: flex;
-    gap: 9rem;
-    justify-content: center;
-  }
-  
-  .ikon-row img {
-    width: 140px;
-    object-fit: contain;
-  }
-  
-  .lm {
-      font-size: 3rem;
-      color: #921537;
-      cursor: pointer;
-      text-decoration: none;
-    }
 
-  a {
-    text-decoration: none;
-  }
-  
+.container {
+  display: flex; /* Flex container til kolonne-layout */
+  flex-direction: column;
+  justify-content: space-between; /* Fordel plads mellem børn */
+  align-items: center; /* Centrer alle børn horisontalt */
+  height: 80vh; /* Fyld 80% af højden af viewport */
+  padding: 4rem; /* Indvendig margen omkring containeren */
+}
+
+h1 {
+  font-size: 4rem; /* Stor overskrift */
+}
+
+.ikoner {
+  display: flex;
+  flex-direction: column; /* Layout med én kolonne */
+  gap: 4rem; /* Lodret afstand mellem rækker */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ikon-row {
+  display: flex; /* Vandret række af ikoner */
+  gap: 9rem; /* Stor afstand mellem ikonerne */
+  justify-content: center; /* Centrer rækken på midten */
+}
+
+.ikon-row img {
+  width: 140px; /* Ens størrelse på alle ikoner */
+  object-fit: contain; /* Sørg for at billedet ikke bliver forvrænget */
+}
+
+.lm {
+  font-size: 3rem; /* Stor tekststørrelse til evt. link eller knap */
+  color: #921537;
+  cursor: pointer; /* Markør ændres ved hover for at vise det kan klikkes */
+  text-decoration: none; /* Fjern understregning */
+}
+
+a {
+  text-decoration: none; /* Fjern standard-udseende for alle links */
+}
