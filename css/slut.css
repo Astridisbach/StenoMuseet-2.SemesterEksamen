@@ -12,7 +12,7 @@ body {
 
 .container {
   text-align: center; /* Centrer tekst inde i containeren */
-  margin-top: 10rem; /* Ryk containeren lidt ned fra toppen */
+  margin-top: 0rem; /* Ryk containeren lidt ned fra toppen */
   gap: 2rem; /* Afstand mellem elementer – har dog kun effekt i en flex- eller grid-container */
 }
 
@@ -26,6 +26,7 @@ body {
   justify-content: space-between; /* Fordel pladsen jævnt mellem ikonerne */
   align-items: center; /* Centrer dem lodret hvis de har forskellig højde */
   padding: 0 2rem; /* Indvendig margen i siderne */
+  margin-top: 8rem;
 }
 
 .ikoner img {
@@ -38,7 +39,7 @@ body {
   display: flex; /* Række af billeder/personer */
   justify-content: center; /* Centrer rækken horisontalt */
   flex-direction: row; /* Sørg for at de står på en linje */
-  margin-top: 10rem; /* Giver luft ned til sektionen */
+  margin-top: 9rem; /* Giver luft ned til sektionen */
   gap: 4rem; /* Luft mellem billederne */
 }
 
