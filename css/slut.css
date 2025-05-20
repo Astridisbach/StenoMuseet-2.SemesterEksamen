@@ -7,6 +7,7 @@ body {
   justify-content: center; /* Centrer indholdet horisontalt */
   align-items: flex-start; /* Placer indhold i toppen (ikke midt) */
   min-height: 100vh; /* Sørg for at body fylder hele skærmen */
+  overflow: hidden;
 }
 
 .container {
