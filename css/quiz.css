@@ -1,102 +1,109 @@
+/* Nulstiller margin og padding på hele siden og tilføjer baggrundsbillede */
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("../img/baggrund.png");
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-  }
-  
-  .img-wrapper {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .img-wrapper img#quiz-image {
-    max-width: 100%;
-    display: block;
-    border-radius: 10px;
-  }
-  
-  .btn-img {
-    position: absolute;
-    width: 200px; 
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .btn-left {
-    bottom: 140px;
-    left: 15%;
-  }
-  
-  .btn-right {
-    bottom: 140px;
-    right: 15%;
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/baggrund.png");
+  background-size: cover; /* Sørger for at billedet dækker hele baggrunden */
+  background-position: center; /* Centrerer baggrundsbilledet */
+}
 
+/* Centralt placeret popup-element midt på skærmen */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
 
-  .nav-wrapper {
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30rem;
-      padding-bottom: 5rem;
-  }
+/* Wrapper omkring billede med mulighed for at placere elementer ovenpå */
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
+/* Stiler selve quiz-billedet */
+.img-wrapper img#quiz-image {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px; /* Let afrunding af hjørner */
+}
 
-  
-  .nav-btn {
-    width: 120px;
-    height: auto;
-    visibility: visible;
-    opacity: 1;
-    transition: transform 0.3s ease;
-    position: relative;
-    top: -8rem;
+/* Grundstil til knapbilleder placeret ovenpå quiz-billedet */
+.btn-img {
+  position: absolute;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Giver glidende skalering ved hover */
+}
 
-  }
-  
-  .frem-btn {
-    visibility: hidden; 
-    opacity: 0;
-  }
-  
-  
-  .frem-btn.vis {
-    visibility: visible;
-    opacity: 1;
-  }
+/* Venstre knapposition */
+.btn-left {
+  bottom: 140px;
+  left: 15%;
+}
 
-  .btn-img:hover,
-  .nav-btn:hover {
+/* Højre knapposition */
+.btn-right {
+  bottom: 140px;
+  right: 15%;
+}
+
+/* Wrapper til navigation – centrerer to knapper med stor afstand imellem */
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30rem;
+  padding-bottom: 5rem;
+}
+
+/* Stil til navigationsknapper (fx næste/forrige) */
+.nav-btn {
+  width: 120px;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.3s ease;
+  position: relative;
+  top: -8rem; /* Trækker knappen lidt op i layoutet */
+}
+
+/* Skjuler frem-knappen som udgangspunkt */
+.frem-btn {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Gør frem-knappen synlig, når den har klassen 'vis' */
+.frem-btn.vis {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Hover-effekt for interaktive knapper – skalering */
+.btn-img:hover,
+.nav-btn:hover {
   transform: scale(1.1);
-  }
+}
 
-
+/* Lukkeikon øverst til højre – typisk til popups */
 .close-img {
   position: absolute;
   top: 20px;
   right: 30px;
-  width: 40px; 
+  width: 40px;
   cursor: pointer;
   z-index: 1001;
   transition: transform 0.2s ease;
 }
 
+/* Hover-effekt på lukkeikon */
 .close-img:hover {
   transform: scale(1.1);
 }
 
-
+/* Alternativ luk-knap placeret længere til venstre (til en anden funktion/situation) */
 .page-close {
   position: fixed;
   top: 20px;

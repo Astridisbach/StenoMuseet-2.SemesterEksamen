@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Grundlæggende opsætning -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz om fakta og myter</title>
 
+    <!-- Favicon for browserfanen -->
     <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png">
 
+    <!-- Google Fonts: Rubik Bubbles og Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet" />
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href="css/quiz.css" />
 
+    <!-- Ekstern CSS-fil -->
+    <link rel="stylesheet" href="css/quiz.css" />
 </head>
 <body>
 
+    <!-- Luk-knap (øverst til venstre), der fører tilbage til forsiden -->
     <a href="forside.html" class="page-close" id="quiz-close">
-      <img src="img/knapper/exit.png" alt="Luk" class="close-img">
+        <img src="img/knapper/exit.png" alt="Luk" class="close-img">
     </a>
 
+    <!-- Popup-container med quizbillede og svarmuligheder -->
     <div class="popup">
         <div class="img-wrapper">
-          <img id="quiz-image" src="" alt="Quiz spørgsmål">
-          <img src="img/knapper/sandt.png" class="btn-img btn-left" onclick="answer(true)" alt="Sandt">
-          <img src="img/knapper/falsk.png" class="btn-img btn-right" onclick="answer(false)" alt="Falsk">
+            <!-- Billede med quiz-spørgsmål -->
+            <img id="quiz-image" src="" alt="Quiz spørgsmål">
+            
+            <!-- Sandt/Falsk-knapper placeret over billedet -->
+            <img src="img/knapper/sandt.png" class="btn-img btn-left" onclick="answer(true)" alt="Sandt">
+            <img src="img/knapper/falsk.png" class="btn-img btn-right" onclick="answer(false)" alt="Falsk">
         </div>
+
+        <!-- Navigation frem og tilbage i quizzen -->
         <div class="nav-wrapper">
-          <img src="img/knapper/tilbage.png" class="nav-btn" onclick="goBack()" alt="Tilbage">
-          <img src="img/knapper/frem.png" class="nav-btn frem-btn" onclick="goForward()" alt="Frem">
+            <img src="img/knapper/tilbage.png" class="nav-btn" onclick="goBack()" alt="Tilbage">
+            <img src="img/knapper/frem.png" class="nav-btn frem-btn" onclick="goForward()" alt="Frem">
         </div>
-      </div>
+    </div>
 
-     
-
+    <!-- JavaScript-fil, som håndterer logik og interaktion -->
     <script src="js/quiz.js"></script>
 </body>
 </html>
