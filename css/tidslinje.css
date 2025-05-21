@@ -164,6 +164,27 @@ p {
   width: 18%;
 }
 
+#knap1 {
+  position: absolute;
+  top: 88px;
+  left: 340px;
+  width: 150px;
+}
+
+#knap2 {
+  position: absolute;
+  top: 340px;
+  left:1140px;
+  width: 135px;
+}
+
+#knap3 {
+  position: absolute;
+  top: 580px;
+  left: 270px;
+  width: 170px;
+}
+
 /* Pop-up billede (overlay) */
 .image-popup {
   display: none; /* Skjules som standard */
@@ -258,3 +279,14 @@ p {
     left: 370px;
     transform: scale(1.5);
   }
+
+
+  .timeline-row .text h2,
+.timeline-row .text p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.timeline-row .text h2:hover,
+.timeline-row .text p:hover {
+  transform: scale(1.02);
+}
