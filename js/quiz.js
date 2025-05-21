@@ -1,4 +1,4 @@
-"use strict"; // Aktiverer JS-strikt mode, hvilket hjælper med at finde fejl
+"use strict"; // Aktiverer strict mode – hjælper med at fange fejl og forbyder brug af visse usikre funktioner
 
 const questions = [
     { image: "img/quiz/sp1.png" },
