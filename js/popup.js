@@ -60,3 +60,4 @@ window.addEventListener('click', (e) => {
     timelineClose.classList.remove('hidden');       // Vis den øverste luk-knap igen
   }
 });
+

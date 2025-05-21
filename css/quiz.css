@@ -29,6 +29,7 @@ body {
     position: absolute;
     width: 200px; 
     cursor: pointer;
+    transition: transform 0.3s ease;
   }
   
   .btn-left {
@@ -58,7 +59,7 @@ body {
     height: auto;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
     position: relative;
     top: -8rem;
 
@@ -74,3 +75,8 @@ body {
     visibility: visible;
     opacity: 1;
   }
+
+  .btn-img:hover,
+.nav-btn:hover {
+  transform: scale(1.1);
+}
