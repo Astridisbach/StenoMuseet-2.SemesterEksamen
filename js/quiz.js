@@ -47,9 +47,6 @@ function updateContent() {
 }
 
 
-
-
-
 function goBack() {
   if (currentIndex === 0) {
     window.location.href = "forside.html"; // Første billede: gå til forside

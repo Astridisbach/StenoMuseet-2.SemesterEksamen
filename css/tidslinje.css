@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'MyFont'; /* Gør en lokal font tilgængelig under navnet 'MyFont' */
-  src: url('fonts/dingos.ttf') format('truetype');
-}
+
 
 /* Basal styling af body */
 body {
@@ -27,7 +24,7 @@ h1 {
 
 /* Underoverskrifter */
 h2 {
-  font-family: 'dingos', sans-serif; /* Brug font importeret via @font-face */
+  font-family: 'Rubik Bubbles', sans-serif; /* Brug font importeret via @font-face */
 }
 
 /* Paragraffer */
@@ -209,6 +206,11 @@ p {
 .nav-btn {
   width: 60px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
 }
 
 /* Luk-knap som billede */
