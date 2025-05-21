@@ -228,7 +228,7 @@ p {
   transform: scale(1.1);
 }
 
-/* Luk hele siden-knap (placering kan justeres for responsivitet) */
+
 .page-close {
   position: fixed;
   top: 20px;
@@ -236,12 +236,12 @@ p {
   z-index: 1001;
 }
 
-/* Skjuler elementer med class="hidden" */
+
 .hidden {
   display: none;
 }
 
-/* Effekt for billeder, der skal forstørres ved hover */
+
 .hover-img {
   transition: transform 0.3s ease;
   display: inline-block;

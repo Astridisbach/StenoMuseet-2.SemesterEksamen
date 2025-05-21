@@ -77,6 +77,29 @@ body {
   }
 
   .btn-img:hover,
-.nav-btn:hover {
+  .nav-btn:hover {
   transform: scale(1.1);
+  }
+
+
+.close-img {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 40px; 
+  cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.2s ease;
+}
+
+.close-img:hover {
+  transform: scale(1.1);
+}
+
+
+.page-close {
+  position: fixed;
+  top: 20px;
+  right: 1300px;
+  z-index: 1001;
 }
